@@ -7,7 +7,14 @@ public class NumberGame
 	public static void main(String args[])
 	{
 		Scanner kbReader = new Scanner(System.in);
-		int num = (int)Math.floor(Math.random() * 100);
-		System.out.println(num);
+		int num = (int)Math.floor(Math.random() * 100); //ramdom number between 1 and 100
+		
+		System.out.println(The computer has the secret number...);
+		System.out.print(Enter your guess (1-100));
+		
+		int guess = kbReader.nextInt();
+		
+		
+		
 	}
 }
