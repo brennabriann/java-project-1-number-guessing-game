@@ -17,7 +17,9 @@ public class NumberGame
 		int guess = kbReader.nextInt();
 		if (guess == num)
 		{
+		guesscount++;
 		System.out.println("Correct!");
+		System.out.println("You used " + guesscount + " guesses.");
 		}
 	}
 }
