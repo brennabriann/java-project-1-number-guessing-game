@@ -21,5 +21,9 @@ public class NumberGame
 		System.out.println("Correct!");
 		System.out.println("You used " + guesscount + " guesses.");
 		}
+		else if (guess > num && guess <= 100)
+		{
+		System.out.println("Too high... Try again.");
+		}
 	}
 }
