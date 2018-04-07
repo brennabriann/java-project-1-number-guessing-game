@@ -18,18 +18,19 @@ public class NumberGame
 		
 		while (guess != num)
 		{
-			if (guess == num)
-			{
-			guesscount++;
-			System.out.println("Correct!");
-			System.out.println("You used " + guesscount + " guesses.");
-			}
-			else if (guess > num && guess <= 100)
+			if (guess > num && guess <= 100)
 			{
 			System.out.println("Too high... Try again.");
 			System.out.print("Enter your guess (1-100):");
 			guess = kbReader.nextInt();
 			}
 		}
+		
+		//code runs if user is correct
+		guesscount++;
+		System.out.println("Correct!");
+		System.out.println("You used " + guesscount + " guesses.");
+		                        
+		
 	}
 }
