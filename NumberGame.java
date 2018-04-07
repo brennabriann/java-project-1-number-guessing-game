@@ -20,7 +20,15 @@ public class NumberGame
 		{
 			if (guess > num && guess <= 100)
 			{
+			guesscount++;
 			System.out.println("Too high... Try again.");
+			System.out.print("Enter your guess (1-100):");
+			guess = kbReader.nextInt();
+			}
+			else if (guess < num && guess >= 1)
+			{
+			guesscount++;
+			System.out.println("Too low... Try again.");
 			System.out.print("Enter your guess (1-100):");
 			guess = kbReader.nextInt();
 			}
