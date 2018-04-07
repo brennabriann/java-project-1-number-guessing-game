@@ -32,6 +32,11 @@ public class NumberGame
 			System.out.print("Enter your guess (1-100):");
 			guess = kbReader.nextInt();
 			}
+			else 
+			{
+			System.out.print("Bad guess. Please re-enter:");
+			guess = kbReader.nextInt();
+			}
 		}
 		
 		//code runs if user is correct
