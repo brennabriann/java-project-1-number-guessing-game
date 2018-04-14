@@ -13,26 +13,26 @@ public class NumberGame
 		System.out.println("The computer has the secret number...");
 		System.out.print("Enter your guess (1-100)");
 		
-		int guesscount = 0;
+		int guesscount = 0; //program counts number of guesses
 		int guess = kbReader.nextInt();
 		
-		while (guess != num)
+		while (guess != num) //runs until user guesses right
 		{
-			if (guess > num && guess <= 100)
+			if (guess > num && guess <= 100) //if user guesses too high
 			{
 			guesscount++;
 			System.out.println("Too high... Try again.");
 			System.out.print("Enter your guess (1-100):");
 			guess = kbReader.nextInt();
 			}
-			else if (guess < num && guess >= 1)
+			else if (guess < num && guess >= 1) //if user guesses too low
 			{
 			guesscount++;
 			System.out.println("Too low... Try again.");
 			System.out.print("Enter your guess (1-100):");
 			guess = kbReader.nextInt();
 			}
-			else
+			else //runs if user guesses number above 100 or below 1
 			{
 			System.out.print("Bad guess. Please re-enter:");
 			guess = kbReader.nextInt();
@@ -40,7 +40,7 @@ public class NumberGame
 		}
 
 		//code runs if user is correct
-		guesscount++;
+		guesscount++; //adds a guess when guessed correctly, code in loop does not run
 		System.out.println("Correct!");
 		System.out.println("You used " + guesscount + " guesses.");
 	}
