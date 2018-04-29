@@ -9,11 +9,15 @@ public class numberGuessingGame {
       do {
          System.out.print("Enter your guess (1-100): ");
          userGuess = kbReader.nextInt();
+         while (userGuess <= 0 || userGuess >= 100) {
+            System.out.print("Bad guess. Please re-enter: ");
+            userGuess = kbReader.nextInt();
+         }
          numGuesses++;
          if (userGuess > secretNum) {
             System.out.println("Too high... Try again.");
          }
-         else if userGuess < secretNum) {
+         else if (userGuess < secretNum) {
             System.out.println("Too low... Try again.");
          }
          else {
