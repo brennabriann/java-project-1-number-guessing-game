@@ -11,22 +11,22 @@ public class numberGuessingGame {
             System.out.print("Enter your guess (1-100): ");
             userGuess = kbReader.nextInt();
             while (userGuess <= 0 || userGuess >= 100) { //Asks user for new input if guess is outside range
-               System.out.print("Bad guess. Please re-enter: ");
+               System.out.print("   Bad guess. Please re-enter: ");
                userGuess = kbReader.nextInt();
             }
             numGuesses++;
             if (userGuess > secretNum) {
-               System.out.println("Too high... Try again.");
+               System.out.println("   Too high... Try again.");
             }
             else if (userGuess < secretNum) {
-               System.out.println("Too low... Try again.");
+               System.out.println("   Too low... Try again.");
             }
             else {
-               System.out.println("Correct!");
+               System.out.println("   Correct!");
             }
          }
          catch (Exception e) {
-            System.out.println("Please only input integers.");
+            System.out.println("   Please only input integers.");
             kbReader.next();
          }
       }
