@@ -11,15 +11,16 @@ public class numberGuessingGame {
          userGuess = kbReader.nextInt();
          numGuesses++;
          if (userGuess > secretNum) {
-         
+            System.out.println("Too high... Try again.");
          }
          else if userGuess < secretNum) {
-         
+            System.out.println("Too low... Try again.");
          }
          else {
-         
+            System.out.println("Correct!");
          }
       }
       while (userGuess != secretNum);
+      System.out.println("You used " + numGuesses + " guesses.");
    }
 }
