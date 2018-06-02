@@ -19,3 +19,9 @@ You used 4 guesses.
 ```
 Note how "bad guesses" are not counted towards the number of guesses.
 
+You will need to keep track of:
+- The secret number, the user's guess, and the number of guesses
+- Whether the user's guess is out of range (smaller than 1 or larger than 100)
+- Whether the user's guess **is larger than** the secret number
+- Whether the user's guess **is smaller than** the secret number
+- Whether the user's guess **is equal to** the secret number
